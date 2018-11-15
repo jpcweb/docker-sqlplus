@@ -6,9 +6,9 @@ A Docker container for running Oracle's sqlplus utility without having to instal
 Prerequisites:
 --------------
 * Docker must be installed on your host system see http://docker.io for details
-* The following Oracle RPM files must be downloaded from the Oracle web site into the same directory as the Dockerfile: http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html
-    * oracle-instantclient11.2-basic-11.2.0.4.0-1.x86_64.rpm
-    * oracle-instantclient11.2-sqlplus-11.2.0.4.0-1.x86_64.rpm
+* **The following Oracle RPM files must be downloaded from the Oracle web site into the same directory as the Dockerfile:** http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html
+    * oracle-instantclient18.3-basic-18.3.0.0.0-1.x86_64.rpm
+    * oracle-instantclient18.3-sqlplus-18.3.0.0.0-1.x86_64.rpm
 
 Building the container:
 -----------------------
@@ -31,9 +31,10 @@ Example run:
 ./sqlplus username/password@db.mydomain.com:1521/SOMESCHEMA
 sqlplus username/password@db.mydomain.com:1521/SOMESCHEMA
 
-SQL*Plus: Release 11.2.0.4.0 Production on Sat Mar 8 15:51:59 2014
+SQL*Plus: Release 18.0.0.0.0 - Production on Thu Nov 15 19:28:48 2018
+Version 18.3.0.0.0
 
-Copyright (c) 1982, 2013, Oracle.  All rights reserved.
+Copyright (c) 1982, 2018, Oracle.  All rights reserved.
 
 
 Connected to:
